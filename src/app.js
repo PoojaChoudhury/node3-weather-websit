@@ -2,6 +2,8 @@ const path = require('path');
 const express = require('express');
 const app = express();
 const hbs = require('hbs');
+//Configuring The Port Number For Heroku
+const port = process.env.PORT || 3000;
 
 const geocode  = require('./utils/geocode');
 const forecast = require('./utils/forecast');
@@ -96,8 +98,8 @@ app.get('/weather', (req,res) => {
     });
 });
 //Startimg the server
-app.listen(3000, () => {
-    console.log("Server is running on port 3000");
+app.listen(port, () => {
+    console.log("Server is running on port "+ port);
     //res.send("Hello Saswati")
 })
 
