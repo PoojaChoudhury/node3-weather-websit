@@ -25,16 +25,21 @@ const forecast = require('./utils/forecast');
   app.get('', (req,res) => {
     res.render('index' , {
         title: 'Weather App',
-        name : 'Andrew Mead',
+        name : 'Saswati Choudhury',
         headerText:'Weather App'
     });
 });
-
+app.get('/about', (req, res) => {
+    res.render('about', {
+        title: 'About Me',
+        name: 'Saswati Choudhury'
+    })
+})
 app.get('/help', (req,res) => {
     res.render('help' , {
         title: 'Help',
-        name : 'This page will help you',
-        headerText:'Help Page Header'
+        name : 'Saswati Choudhury',
+        headerText:'Help'
     });
 });
   app.use(express.static(publicPath));

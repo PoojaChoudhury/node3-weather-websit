@@ -1,24 +1,14 @@
-{{!-- <!DOCTYPE html>
-<html>
-    <head>
-      <title>{{title}}</title>
-    </head>
-    <body>
-        {{>header}}
-        <p>{{name}}</p>
-        {{>footer}}
-    </body>
-</html> --}}
 <!DOCTYPE html>
 
 <html>
 
 <head>
-  <title>Help</title>
-  <link rel="icon" href="/img/weather.png">
-  <link rel="stylesheet" href="/css/styles.css">
-  <style>
-    body {
+    <title>About</title>
+    <link rel="icon" href="/img/weather.png">
+    {{!-- <link rel="stylesheet" href="/css/styles.css"> --}}
+    <link rel="stylesheet" href="/web-server/public/css/style.css">
+    <style>
+        body {
     color: #333333;
     font-family: arial;
     max-width: 650px;
@@ -33,7 +23,6 @@
 .main-content {
     flex-grow: 1;
 }
-
 footer {
     color: #888888;
     border-top: 1px solid #eeeeee;
@@ -60,30 +49,16 @@ header a {
 .portrait {
     width: 250px;
 }
-
-input {
-    border: 1px solid #cccccc;
-    padding: 8px;
-}
-
-button {
-    cursor: pointer;
-    border: 1px solid #888888;
-    background: #888888;
-    color: white;
-    padding: 8px;
-}
-  </style>
-
+    </style>
 </head>
 
 <body>
-  <div class="main-content">
-    {{>header}}
-    <p>{{helpText}}</p>
-  </div>
-
-  {{>footer}}
+    <div class="main-content">
+        {{>header}}
+        <img width="200px" height="300px" class="portrait" src="/img/me.png">
+    </div>
+    
+    {{>footer}}
 </body>
 
 </html>
