@@ -1,12 +1,12 @@
-console.log('Client side Javascript file is loaded');
+/* console.log('Client side Javascript file is loaded'); */
 
-fetch('https://puzzle.mead.io/puzzle').then((response) => {
+/* fetch('https://puzzle.mead.io/puzzle').then((response) => {
     response.json().then((data) => {
         console.log(data);
     })
     
 })
-
+ */
 
 //Fetching data from our Local End Point
 
